@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    background: #131313;
+    background: #dbc9bd;
     font-family: 'Roboto', sans-serif;
   
   }
@@ -189,7 +189,7 @@ section {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #dbc9bd;
+  background-color: #171515;
   color: white;
   cursor: pointer;
   padding: 15px;
