@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    background: #644c3a;
+    background: #8e6f57;
     font-family: 'Roboto', sans-serif;
   
   }
@@ -49,7 +49,7 @@
   
   nav ul li a{
     text-decoration: none;
-    color: #8b6f5b;
+    color: #5c4536;
     font-size: 17px;
     font-family: monospace;
     transition: .3 ease-out;
