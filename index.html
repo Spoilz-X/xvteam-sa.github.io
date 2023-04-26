@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link rel="shortcut icon" type="x-icon" href="profpic.jpg">
     <title>Aziz🧑‍💻</title>
 </head>
@@ -66,56 +67,45 @@
     <section class="two">
 
         <h1 style="font-family: 'Chakra Petch', sans-serif";>My skills</h1>
+            <canvas id="myChart"></canvas>
 
-        <table id="axes-example-3" class="charts-css bar show-labels show-primary-axis">
-          <caption></caption>
-          <thead>
-            <tr>
-              <th scope="col"  style="font-family: 'Chakra Petch', sans-serif";> Skill </th>
-              <th scope="col" style="font-family: 'Chakra Petch', sans-serif";> Progress </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Web </th>
-              <td style="--size:0.8;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 70% </span></td>
-            </tr> 
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Windows </th>
-              <td style="--size:0.9;"><span class="data"  style="font-family: 'Chakra Petch', sans-serif";> 50% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Networking </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 20% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Hashing </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 40% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Python </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 40% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Js </th>
-              <td style="--size:0.3;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 30% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Html </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 50% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> Css </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 20% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> C,C++ </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 30% </span></td>
-            </tr>
-            <tr>
-              <th scope="row" style="font-family: 'Chakra Petch', sans-serif";> SQL </th>
-              <td style="--size:0.7;"><span class="data" style="font-family: 'Chakra Petch', sans-serif";> 10% </span></td>
-            </tr>
+            <script>
+              var ctx = document.getElementById('myChart').getContext('2d');
+              var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                  labels: ['Web', 'Windows', 'Networking', 'Hashing', 'Python', 'JS', 'HTML', 'CSS', 'CC++', 'SQL'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [70, 50, 20, 40, 40, 40, 60, 30, 30, 10],
+                    backgroundColor: [
+                      'rgb(19,51,55)',
+                      'rgb(60,11,91)',
+                      'rgb(44,62,53)',
+                      'rgb(14,47,68)',
+                      'rgb(10,17,40)',
+                      'rgb(102,102,102)',
+                      'rgb(104,151,187)',
+                      'rgb(180,238,180)',
+                      'rgb(110,34,18)',
+                      'rgb(22,50,12)'
+                    ],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  cutoutPercentage: 50,
+                  animation: {
+                    animateScale: true
+                  },
+                  legend: {
+                    labels: {
+                      fontColor: 'white'
+                    }
+                  }
+                }
+              });
+            </script>
 
             <!--
             <tr>
@@ -148,28 +138,10 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <h1 style="font-family: 'Chakra Petch', sans-serif";>My Certificates</h1>
         <br>
         <br>
-        <img src="cs50.jpeg" heigth="4000" width="400" alt=""> <img src="Ejpt.png" heigth="370" width="410" alt="">
+        <img src="cs50.jpeg" heigth="4000" width="400" alt=""> <img src="Ejpt.png" heigth="370" width="410" alt=""> <img src="THM-1.png" heigth="4000" width="400" alt=""> <img src="THM-2.png" heigth="370" width="410" alt=""> <img src="THM-3.png" heigth="370" width="410" alt="">
         <!-- bottom-info -->
         
         
