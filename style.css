@@ -172,7 +172,10 @@ section {
     0%  { transform: scaleY( 0 ); }
     15% { transform: scaleY( 1 ); }
   }
-
+  .badges{
+    color: white;
+    
+  }
 
 
 
